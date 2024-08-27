@@ -64,7 +64,7 @@ def voice_to_text_pipeline(audio):
     return raw_text
 
 def text_to_text_generation(text):
-    os.environ["GOOGLE_API_KEY"]="AIzaSyAqpOXAbWFhmubFY9fTLNlJxQflIXC7nCg"
+    os.environ["GOOGLE_API_KEY"]="GOOGLE_API_KEY"
     genai.configure(api_key=os.environ["GOOGLE_API_KEY"])
     model = genai.GenerativeModel('gemini-pro')
     prompt = f"""
